@@ -6,7 +6,7 @@ import tofu.syntax.raise._
 
 import scala.util.Try
 
-trait IntParser[F[_]] {
+trait  IntParser[F[_]] {
   def parse(s: String): F[Int]
 }
 

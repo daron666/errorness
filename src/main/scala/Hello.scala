@@ -2,7 +2,6 @@ import cats.effect.{ExitCode, IO, IOApp}
 import common.IntExecutor.{IntExecutorError, IntIsNegative, IntTooBig}
 import common.IntParser.{IntParserError, NotInt}
 import common.{IntExecutor, IntParser}
-import tofu.{Errors, ErrorsTo, Handle}
 import tofu.syntax.handle._
 
 object Hello extends IOApp {
