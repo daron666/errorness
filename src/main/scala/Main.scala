@@ -24,6 +24,7 @@ object Main extends IOApp {
 
   }
 
+  //Here is root handle for throwable gonna catch all previously unhadled error.
   def runCase[F[_]: Console: Monad: Handle[*[_], Throwable]](f: F[String], name: String): F[Unit] =
     for {
       _      <- putStrLn(s"Starting case $name")
